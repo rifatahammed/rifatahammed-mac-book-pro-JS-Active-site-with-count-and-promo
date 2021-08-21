@@ -1,4 +1,6 @@
-//function for calculating total
+/*-------------------------------------
+         function for calculating total
+--------------------------------------- */
 function calculateTotal() {
   const finalMemoryFee = document.getElementById("memory-cost").innerText;
   const finalStorageFee = document.getElementById("storage-cost").innerText;
@@ -12,7 +14,10 @@ function calculateTotal() {
   document.getElementById("total-price").innerText = totalPrice;
   document.getElementById("grand-total").innerText = totalPrice;
 }
-//function for grand total
+
+/*-------------------------------------
+         function for grand total
+--------------------------------------- */
 function grandTotal(promoCode) {
   let totalWithPromo = parseInt(
     document.getElementById("grand-total").innerText
@@ -28,6 +33,10 @@ function grandTotal(promoCode) {
     document.getElementById("popup-green").style.visibility = "visible";
     document.getElementById("popup-red").style.visibility = "hidden";
     document.getElementById("promo-code").value = "";
+    let buttons = document.getElementsByTagName("button");
+    for (const button of buttons) {
+      button.disabled = true;
+    }
   } else {
     document.getElementById("popup-red").style.visibility = "visible";
     document.getElementById("promo-code").value = "";
@@ -35,10 +44,14 @@ function grandTotal(promoCode) {
   document.getElementById("grand-total").innerText = totalWithPromo;
 }
 
-/*handle total for initial state without choosing any option*/
+/*----------
+handle total for initial state without choosing any option
+-----------*/
 calculateTotal();
 
-//function for memory cost
+/*-------------------------------------
+         function for memory cost
+--------------------------------------- */
 function setMemoryCost(isClicked) {
   let currentMemoryCost;
   if (isClicked == true) {
@@ -50,7 +63,9 @@ function setMemoryCost(isClicked) {
   calculateTotal();
 }
 
-//function for storage cost
+/*-------------------------------------
+         function for storage cost
+--------------------------------------- */
 function setStorageCost(storage) {
   let currentStorageCost;
   if (storage == 256) {
@@ -64,7 +79,9 @@ function setStorageCost(storage) {
   calculateTotal();
 }
 
-//function for delivery charge
+/*-------------------------------------
+         function for delivery charge
+--------------------------------------- */
 function setDeliveryCost(freeIsClicked) {
   let currentDeliveryCost;
   if (freeIsClicked == true) {
@@ -76,7 +93,9 @@ function setDeliveryCost(freeIsClicked) {
   calculateTotal();
 }
 
-// handle memory cost
+/*-------------------------------------
+         handle memory cost
+--------------------------------------- */
 document.getElementById("memory-8gb").addEventListener("click", function () {
   setMemoryCost(false);
 });
@@ -84,7 +103,9 @@ document.getElementById("memory-16gb").addEventListener("click", function () {
   setMemoryCost(true);
 });
 
-//hadle storage cost
+/*-------------------------------------
+         hadle storage cost
+--------------------------------------- */
 document
   .getElementById("storage-256-GB")
   .addEventListener("click", function () {
@@ -101,7 +122,9 @@ document
     setStorageCost(1000);
   });
 
-//handle delivery charge
+/*-------------------------------------
+         handle delivery charge
+--------------------------------------- */
 document.getElementById("delivery-Free").addEventListener("click", function () {
   setDeliveryCost(true);
 });
@@ -111,7 +134,9 @@ document
     setDeliveryCost(false);
   });
 
-//handle promo code apply
+/*-------------------------------------
+         handle promo code apply
+--------------------------------------- */
 document.getElementById("promo-submit").addEventListener("click", function () {
   let promo = document.getElementById("promo-code").value;
   grandTotal(promo);
