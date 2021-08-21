@@ -14,8 +14,6 @@ function calculateTotal() {
 }
 //function for grand total
 function grandTotal(promoCode) {
-  //   let totalPrice = document.getElementById("total-price").innerText;
-  //   document.getElementById("grand-total").innerText = totalPrice;
   let totalWithPromo = parseInt(
     document.getElementById("grand-total").innerText
   );
@@ -27,6 +25,12 @@ function grandTotal(promoCode) {
       parseInt(document.getElementById("grand-total").innerText) -
       twentyPercent;
     button.disabled = true;
+    document.getElementById("popup-green").style.visibility = "visible";
+    document.getElementById("popup-red").style.visibility = "hidden";
+    document.getElementById("promo-code").value = "";
+  } else {
+    document.getElementById("popup-red").style.visibility = "visible";
+    document.getElementById("promo-code").value = "";
   }
   document.getElementById("grand-total").innerText = totalWithPromo;
 }

@@ -35,22 +35,53 @@
           <br />
           <br />
           <h4>Choose your delivery option</h4>
-          <button id="delivery-Free">FREE</button>
-          <button id="delivery-notFree">COST</button>
+          <button id="delivery-Free">Friday, Aug 25 FREE Prime Delivery</button>
+          <button id="delivery-notFree">
+            Friday, Aug 21 Delivery charge $20
+          </button>
           <br /><br /><br />
-          <h3>BEST Price $ <span id="base-price">1299</span></h3>
-
-          <h3>MEMORY $ <span id="memory-cost">0</span></h3>
-
-          <h3>STORAGE $ <span id="storage-cost">0</span></h3>
-
-          <h3>DELIVERY $ <span id="delivery-charge">0</span></h3>
-
-          <h3>TOTAL PRICE $ <span id="total-price">00</span></h3>
+          <!-- <div class="price-catagories">A</div>
+          <div class="price-count">b</div> -->
+          <div>
+            <table>
+              <tr>
+                <td><h3>BEST Price</h3></td>
+                <td>
+                  <h3>$ <span id="base-price">1299</span></h3>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>MEMORY</h3></td>
+                <td>
+                  <h3>$ <span id="memory-cost">0</span></h3>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>STORAGE</h3></td>
+                <td>
+                  <h3>$ <span id="storage-cost">0</span></h3>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>DELIVERY</h3></td>
+                <td>
+                  <h3>$ <span id="delivery-charge">0</span></h3>
+                </td>
+              </tr>
+              <tr class="total-price">
+                <td><h3>TOTAL PRICE</h3></td>
+                <td>
+                  <h3>$ <span id="total-price">00</span></h3>
+                </td>
+              </tr>
+            </table>
+          </div>
           <hr />
           <p>add promo code</p>
           <input id="promo-code" />
           <button id="promo-submit">APPLY</button>
+          <div id="popup-green">✅promo code added successfully</div>
+          <div id="popup-red">❌promo code is not valid</div>
         </div>
       </section>
     </main>

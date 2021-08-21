@@ -7,6 +7,9 @@ h4 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+h3 {
+  margin: 0;
+}
 .flexible {
   display: flex;
 }
@@ -14,6 +17,7 @@ h4 {
   width: 50%;
   padding-left: 5%;
 }
+
 button {
   text-decoration: none;
   font-weight: 700;
@@ -24,15 +28,21 @@ button:disabled {
   background: #dddddd;
   color: #ceabab;
 }
-
-.btn {
-  text-decoration: none;
-  background-image: linear-gradient(to right, rgb(233, 166, 43), tomato);
-  color: white;
-  font-weight: 700;
-  padding: 20px 40px;
-  border-radius: 85px;
+td {
+  width: 200px;
+}
+.total-price {
+  color: rgb(173, 1, 189);
+}
+#popup-green {
+  color: green;
+  visibility: hidden;
+}
+#popup-red {
+  color: red;
+  visibility: hidden;
 }
 footer {
   text-align: center;
+  color: rgb(206, 6, 6);
 }
