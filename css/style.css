@@ -1,0 +1,38 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  color: #575757;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.flexible {
+  display: flex;
+}
+.half-width {
+  width: 50%;
+  padding-left: 5%;
+}
+button {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 85px;
+}
+button:disabled {
+  background: #dddddd;
+  color: #ceabab;
+}
+
+.btn {
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgb(233, 166, 43), tomato);
+  color: white;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 85px;
+}
+footer {
+  text-align: center;
+}

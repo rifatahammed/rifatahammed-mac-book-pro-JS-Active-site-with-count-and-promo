@@ -9,35 +9,53 @@
   </head>
   <body>
     <main>
-      <section>
-        <button id="memory-8gb">8GB</button>
-        <button id="memory-16gb">16GB</button>
-      </section>
-      <section>
-        <button id="storage-256-GB">256</button>
-        <button id="storage-512-GB">512</button>
-        <button id="storage-1000-GB">1TB</button>
-      </section>
-      <section>
-        <button id="delivery-Free">FREE</button>
-        <button id="delivery-notFree">COST</button>
-      </section>
-      <section>
-        <h3>BEST $ <span id="base-price">1299</span></h3>
+      <section class="flexible">
+        <div class="half-width">
+          <img src="images/mac.png" alt="" srcset="" />
+        </div>
 
-        <h3>MEMORY $ <span id="memory-cost">0</span></h3>
+        <div class="half-width">
+          <h2>Customize your Blue 24-inch iMak with Apple M1 chip.</h2>
+          <br />
+          <p>
+            Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine
+            8GB unified memory 512GB SSD storage Retina display with True Tone
+            Backlit Magic Keyboard - US English
+          </p>
+          <br />
+          <h4>Memory</h4>
+          <button id="memory-8gb">8GB unified memory</button>
+          <button id="memory-16gb">16GB unified memory</button>
+          <br />
+          <br />
+          <h4>Storage</h4>
+          <button id="storage-256-GB">256GB SSD storage</button>
+          <button id="storage-512-GB">512GB SSD storage</button>
+          <button id="storage-1000-GB">1TB SSD storage</button>
+          <br />
+          <br />
+          <h4>Choose your delivery option</h4>
+          <button id="delivery-Free">FREE</button>
+          <button id="delivery-notFree">COST</button>
+          <br /><br /><br />
+          <h3>BEST Price $ <span id="base-price">1299</span></h3>
 
-        <h3>STORAGE $ <span id="storage-cost">0</span></h3>
+          <h3>MEMORY $ <span id="memory-cost">0</span></h3>
 
-        <h3>DELIVERY $ <span id="delivery-charge">0</span></h3>
+          <h3>STORAGE $ <span id="storage-cost">0</span></h3>
 
-        <h3>TOTAL PRICE $ <span id="total-price">00</span></h3>
+          <h3>DELIVERY $ <span id="delivery-charge">0</span></h3>
+
+          <h3>TOTAL PRICE $ <span id="total-price">00</span></h3>
+          <hr />
+          <p>add promo code</p>
+          <input id="promo-code" />
+          <button id="promo-submit">APPLY</button>
+        </div>
       </section>
-      <p>add promo code</p>
-      <input id="promo-code" />
-      <button id="promo-submit">APPLY</button>
     </main>
     <footer>
+      <hr />
       <h1>TOTAL : $<span id="grand-total">0</span></h1>
     </footer>
     <script src="js/app.js"></script>
